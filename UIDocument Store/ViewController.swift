@@ -50,6 +50,17 @@ class ViewController: UIViewController {
     }
 
     @IBAction func saveDoc(_ sender: Any) {
+        self.doc?.userCustomString = self.textView.text
+        
+        if let url = urlToDocPath {
+            doc?.save(to: url, for: .forOverwriting, completionHandler: { (success) in
+                if success {
+                    print("Saved!")
+                } else {
+                    print("Failed to overwrite!")
+                }
+            })
+        }
     }
     
 }
