@@ -12,6 +12,16 @@ import UIKit
 
 class CustomDocument: UIDocument {
 
+    var userCustomString: String? = "This is test to create the user custom string."
     
+    //this method will the user data from UITextField
+    override func contents(forType typeName: String) throws -> Any {
+        if let contents = userCustomString {
+            let length = contents.lengthOfBytes(using: String.Encoding.utf8)
+            return NSData(bytes: contents, length: length)
+        } else {
+            return Data()
+        }
+    }
     
 }
