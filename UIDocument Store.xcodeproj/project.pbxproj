@@ -13,6 +13,7 @@
 		03F8E987231EE8A20095B4C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03F8E985231EE8A20095B4C2 /* Main.storyboard */; };
 		03F8E989231EE8A40095B4C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03F8E988231EE8A40095B4C2 /* Assets.xcassets */; };
 		03F8E98C231EE8A40095B4C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03F8E98A231EE8A40095B4C2 /* LaunchScreen.storyboard */; };
+		03F8E994231EE9DD0095B4C2 /* CustomDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F8E993231EE9DD0095B4C2 /* CustomDocument.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		03F8E988231EE8A40095B4C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03F8E98B231EE8A40095B4C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03F8E98D231EE8A40095B4C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03F8E993231EE9DD0095B4C2 /* CustomDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDocument.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				03F8E97F231EE8A20095B4C2 /* AppDelegate.swift */,
 				03F8E981231EE8A20095B4C2 /* SceneDelegate.swift */,
 				03F8E983231EE8A20095B4C2 /* ViewController.swift */,
+				03F8E993231EE9DD0095B4C2 /* CustomDocument.swift */,
 				03F8E985231EE8A20095B4C2 /* Main.storyboard */,
 				03F8E988231EE8A40095B4C2 /* Assets.xcassets */,
 				03F8E98A231EE8A40095B4C2 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03F8E984231EE8A20095B4C2 /* ViewController.swift in Sources */,
+				03F8E994231EE9DD0095B4C2 /* CustomDocument.swift in Sources */,
 				03F8E980231EE8A20095B4C2 /* AppDelegate.swift in Sources */,
 				03F8E982231EE8A20095B4C2 /* SceneDelegate.swift in Sources */,
 			);
