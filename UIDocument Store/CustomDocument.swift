@@ -8,6 +8,10 @@
 
 import UIKit
 
+//we cannot directly use UIDocument class, this is why it is necassary to create subclass of UIDocument class
+
 class CustomDocument: UIDocument {
 
+    
+    
 }
