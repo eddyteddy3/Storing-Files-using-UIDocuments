@@ -15,30 +15,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4D-0D-12U">
+                                <rect key="frame" x="190" y="439" width="34" height="30"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveDoc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KbS-qr-2au"/>
+                                </connections>
+                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="D48-fM-pEj">
-                                <rect key="frame" x="17" y="103" width="380" height="276"/>
+                                <rect key="frame" x="20" y="44" width="380" height="276"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="276" id="HJT-nt-vIo"/>
+                                </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4D-0D-12U">
-                                <rect key="frame" x="190" y="439" width="34" height="30"/>
-                                <state key="normal" title="Save"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="e4D-0D-12U" firstAttribute="top" secondItem="D48-fM-pEj" secondAttribute="bottom" constant="60" id="L4z-TS-BYm"/>
-                            <constraint firstItem="D48-fM-pEj" firstAttribute="centerX" secondItem="e4D-0D-12U" secondAttribute="centerX" id="PfL-Bj-2Bo"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="e4D-0D-12U" secondAttribute="bottom" constant="393" id="STV-Hd-CYS"/>
-                            <constraint firstItem="D48-fM-pEj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Y2o-2c-RSC"/>
-                            <constraint firstItem="D48-fM-pEj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="17" id="xzM-Np-pf8"/>
-                            <constraint firstItem="D48-fM-pEj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="59" id="y4H-nb-zUz"/>
+                            <constraint firstItem="e4D-0D-12U" firstAttribute="top" secondItem="D48-fM-pEj" secondAttribute="bottom" constant="119" id="4mT-nW-tJT"/>
+                            <constraint firstItem="D48-fM-pEj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="A3g-mw-JCI"/>
+                            <constraint firstItem="D48-fM-pEj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Cbk-kX-WvR"/>
+                            <constraint firstItem="e4D-0D-12U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T8b-Ff-ezF"/>
+                            <constraint firstItem="e4D-0D-12U" firstAttribute="top" secondItem="D48-fM-pEj" secondAttribute="bottom" constant="119" id="XsW-LQ-XRG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D48-fM-pEj" secondAttribute="trailing" constant="14" id="lmg-z7-MhJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="textView" destination="D48-fM-pEj" id="aj4-N4-aC7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
